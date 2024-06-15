@@ -1,23 +1,31 @@
-# Bigquery instances
-# BigQuery Projects
+# send-email-with-python
 
-This repository contains SQL files with BigQuery queries for various projects related to different tasks.
+# Python SMTP Email Sender
+
+This repository contains a Python script (send_email.py) that demonstrates how to send emails using Python's SMTP library.
 
 ## Description
-The SQL files in this repository contain queries written for different projects, Each SQL file represents a separate project or task and contains the corresponding BigQuery queries.
+The send_email.py script provides a simple example of how to send emails programmatically using Python's smtplib library. It includes functionalities such as:
+# Connecting to an SMTP server
+Authenticating with the server using credentials Constructing an email message with headers (subject, sender, recipient) Sending the email message
 
 ## Files
-* Commission Not Given (commission_not_given.sql) : Contains queries related to identifying cases where commission was not given.
-* Pivot Transaction Summary (pivot_transaction_summary.sql) : Contains queries for generating a pivot transaction summary report for a given period.
-* Agent Submissions (agent_submissions.sql) : Contains queries related to picking and correctly formatting agent submissions
-* Funding Unaffected (funding_unaffected.sql) : Contains queries for analyzing cases where transactions didn't affect the users wallet.
-
+* send_email.py: Python script for sending emails using the smtplib library.
 
 ## Usage
-To use the queries:
-* Ensure you have access to Google BigQuery.
-* Open the SQL file corresponding to the project you are interested in.
-* Copy the queries from the file and execute them in the BigQuery console or any other SQL client.
+To use the send_email.py script:
+* Ensure you have Python installed on your system.
+* Open the send_email.py file in a text editor.
+* Update the script with your SMTP server settings (host, port, username, password), sender email address, recipient email address, subject, and message content.
+* Save the changes to the send_email.py file.
+* Open a terminal or command prompt.
+* Navigate to the directory containing the send_email.py file.
+* Run the script by executing the following command: (python send_email.py)
+* Follow any prompts or instructions provided in the script during execution.
+
+# Dependencies
+Python 3.x
+smtplib library (included in the Python standard library)
 
 ## Contributors
 Damilola Akinsoju
