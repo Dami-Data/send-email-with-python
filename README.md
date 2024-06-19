@@ -28,7 +28,6 @@ Python 3.x
 smtplib library (included in the Python standard library)
 
 ## Contributors
-Damilola Akinsoju
-Feel free to contribute by submitting pull requests or opening issues.
+* Damilola Akinsoju
 
 
