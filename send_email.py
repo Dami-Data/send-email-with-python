@@ -127,7 +127,10 @@ def actionFunc(client, table_name):
     print(f"Bigquery data fetched from {table_name}. Lenght:",len(bq_ids))
 
 # Search for missing ids
-    missing_ids = [mysql_id for mysql_id in mysql_ids if mysql_id not in bq_ids]
+    #missing_ids = [mysql_id for mysql_id in mysql_ids if mysql_id not in bq_ids]
+    mysql_array = np.array(mysql_ids)  #this is faster when dealing with large dataset.
+    bq_array = np.array(bq_ids)
+    missing_ids = np.setdiff1d(mysql_array, bq_array)
     print(f"Missing data fetched from {table_name}. Length:", len(missing_ids))
 
     if len(missing_ids) > 0:
